@@ -26,7 +26,7 @@ tasks:
   scan:
     desc: Run security scan
     cmds:
-      - gosec -v ./...
+      - gosec -conf .gosec.config.json "./..."
 
   tools:
     desc: Install tools
